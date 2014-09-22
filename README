@@ -1,0 +1,20 @@
+（1）	数据库同时只对外提供一个数据库实例
+（2）缓存是select语句进行匹配
+（3）数据库存储的文件以    xx。db结尾
+（4）  数据文件的第一行：列名  以空格区分  数据也以空格区分
+（5）当数据为空是   补充NULL
+（6）网络中传输的数据必须是type+length+body
+
+
+
+
+
+
+协议定义：
+	（1）register	：服务类型&username&passwd
+	（2）result	：用“;”区分不同的列,用“,”区分不同的cell
+	（3）select	：select&列名&表名
+	（4）change	：update&列数据（,分隔）&lie名&表名
+	（5）delect	：delete&表名,列名,值
+	（6）insert	：insert&表名&数据
+	（7）show	tables	：	databasename
